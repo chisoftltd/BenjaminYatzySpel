@@ -34,7 +34,8 @@ public class Dice implements ActionListener {
                 loadImage("image\\d2.GIF"),
                 loadImage("image\\d3.GIF"),
                 loadImage("image\\d4.GIF"),
-                loadImage("image\\d5.GIF")                
+                loadImage("image\\d5.GIF"),
+                loadImage("image\\d6.GIF")
             };
 
     // Paus tärnings bilder
@@ -44,7 +45,8 @@ public class Dice implements ActionListener {
                 loadImage("image\\d2Held.GIF"),
                 loadImage("image\\d3Held.GIF"),
                 loadImage("image\\d4Held.GIF"),
-                loadImage("image\\d5Held.GIF")
+                loadImage("image\\d5Held.GIF"),
+                loadImage("image\\d6Held.GIF")
             };
 
     Dice(JPanel dicePanel) {
@@ -121,7 +123,7 @@ public class Dice implements ActionListener {
             pause = false;
         }
         if (!pause) {
-            result = (int) (Math.floor(Math.random() * (5)) + 1);
+            result = (int) (Math.floor(Math.random() * (6)) + 1);
             updateImage();
         }
         boolean enable = (numberOfThrows < 3);

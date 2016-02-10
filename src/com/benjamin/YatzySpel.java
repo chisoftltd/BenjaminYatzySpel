@@ -479,9 +479,7 @@ public class YatzySpel extends JFrame implements ActionListener {
              dice controller som handlings lyssnare för värdering knappar
              */
             try {
-                img = ImageIO.read(new File("C:\\Users\\Chisoft\\Documents\\"
-                        + "NetBeansProjects\\YatzySpel_VersionII\\src\\com\\"
-                        + "benjamin\\image\\skyImage.jpg"));
+                img = ImageIO.read(this.getClass().getResource("image/skyImage.jpg"));
             } catch (IOException e) {
             }
             playPanel = new MyPanel();
